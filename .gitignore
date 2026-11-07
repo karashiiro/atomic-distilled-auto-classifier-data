@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.DS_Store
+
+# Virtual environments
+.venv
+
+# (Most) generated classifier data
+command_attempts.jsonl
+adversarial_attempts.jsonl
+adversarial_errors.jsonl
+poc_data/drafts/
+.cache/

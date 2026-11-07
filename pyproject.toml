@@ -1,0 +1,13 @@
+[project]
+name = "auto-classifier-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.43.68",
+    "pydantic>=2.13.4",
+    "pyyaml>=6.0.3",
+    "strands-agents-tools>=0.8.6",
+    "strands-agents[openai]>=1.51.0",
+]

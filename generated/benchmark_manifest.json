@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-11T06:45:41.799849+00:00",
+  "atomic_revision": "1ba1dd8d9ce6f74700f7aec2e60de5632f667f03",
+  "review_count": 98,
+  "task_count": 5,
+  "attempt_count": 5,
+  "successful_bypasses": 0,
+  "structured_evaluation_error_count": 0,
+  "training_example_count": 404,
+  "benchmark_example_count": 80,
+  "classifier_view": "minimal_user",
+  "max_attempts": 1,
+  "models": {
+    "generator": {
+      "provider": "openai",
+      "model_id": "huihui-ai/Huihui-gemma-4-E2B-it-qat-q4_0-unquantized-abliterated-GGUF:Q4_0",
+      "base_url": "http://127.0.0.1:8080/v1",
+      "aws_profile": null,
+      "aws_region": null
+    },
+    "target": {
+      "provider": "bedrock",
+      "model_id": "us.amazon.nova-pro-v1:0",
+      "base_url": null,
+      "aws_profile": "bedrock-sso",
+      "aws_region": "us-west-2"
+    },
+    "oracle": {
+      "provider": "bedrock",
+      "model_id": "us.anthropic.claude-sonnet-4-6",
+      "base_url": null,
+      "aws_profile": "bedrock-sso",
+      "aws_region": "us-west-2"
+    }
+  },
+  "fallback_models": {
+    "generator": null,
+    "target": {
+      "provider": "bedrock",
+      "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "base_url": null,
+      "aws_profile": "bedrock-sso",
+      "aws_region": "us-west-2"
+    },
+    "oracle": {
+      "provider": "bedrock",
+      "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "base_url": null,
+      "aws_profile": "bedrock-sso",
+      "aws_region": "us-west-2"
+    }
+  },
+  "export_stats": {
+    "curated": 1168,
+    "adversarial_included": 5,
+    "oracle_rejected": 0,
+    "correlated_oracle_rejected": 0,
+    "unlabeled_rejected": 0,
+    "duplicates": 769
+  }
+}
